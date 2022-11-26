@@ -21,7 +21,7 @@ public class Cripto {
     public Boolean verEstado(){
         var valor =0.0;
         for (var i=0; i<8; i++) {
-            if (null == listaMovimientos.get(i).getValorMovimiento()){
+            if (null == listaMovimientos.get(i)){
                 continue;
             }
             else{

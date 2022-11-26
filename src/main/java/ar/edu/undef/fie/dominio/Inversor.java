@@ -13,8 +13,25 @@ public class Inversor {
         this.cantCripto = cantCripto;
     }
 
-    public void invertir(Inversor inversor, Cripto cripto){
+    public void comprar(Cripto cripto, double cantidad){
+        setDineroDisponible(getDineroDisponible()-cripto.getValor()*cantidad);
+        setCantCripto(getCantCripto()+cantidad);
 
+    }
+
+    public void vender(Cripto cripto, double cantidad){
+        setCantCripto(getCantCripto()-cantidad);
+        setDineroDisponible(getDineroDisponible()-cantidad*cripto.getValor());
+    }
+
+    public void invertir(Cripto cripto){
+        if (cripto.verEstado()){
+            //true
+            perfil.invertirAlta(this, cripto);
+        }
+        else{
+            perfil.invertirBaja(this,cripto);
+        }
     }
 
 
