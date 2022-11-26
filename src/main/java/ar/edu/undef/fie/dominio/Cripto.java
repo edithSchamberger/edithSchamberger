@@ -17,7 +17,7 @@ public class Cripto {
         // no habia hecho nada con el valor de la cripto
         setValor(getValor()+ mov.getValorMovimiento());
     }
-
+/* este es el que me corriege que no puedo como el quiere*/
     public Boolean verEstado(){
         var valor =0.0;
         for (var i=0; i<8; i++) {

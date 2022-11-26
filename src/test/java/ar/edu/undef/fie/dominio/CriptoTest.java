@@ -36,8 +36,3 @@ class CriptoTest {
     }
 }
 
- /*   var mov1 = new Movimiento(500.2);
-    var mov2 = new Movimiento(300.2);
-    var mov = new Movimiento(5.2);
-    var mov1 = new Movimiento(-100.2);
-// var criptoMoneda = new Cripto();*/
